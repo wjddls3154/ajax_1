@@ -1,6 +1,20 @@
 # ajax_1
 ### jQuery & Ajax 
 
+- 예시 1
+
+![image](https://user-images.githubusercontent.com/37132897/158537091-7684c1e6-3459-4aae-a236-1712a4070935.png)
+
+
+- 예시 2
+
+![image](https://user-images.githubusercontent.com/37132897/158537022-f5175f57-23f0-4cd7-bb99-b75354ddb466.png)
+
+
+- 예시 3
+![image](https://user-images.githubusercontent.com/37132897/158536868-dba0d6f2-cd54-4a02-bcf7-961fe6a00c78.png)
+
+
 ## Ajax
 jQuery 에서 비동기 통신을 할 수 있는 메소드 
 - $.ajax() : 비동기 HTTP 요청

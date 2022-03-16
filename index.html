@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+
+  <body>
+    <button type="button" id="btn_data">클릭해주세요!</button>
+    <div id="data">data</div>
+    <script>
+      // 예시 1 : 버튼 눌렀을 때, data 로드(불러오기)
+      // $("#btn_data").click(function () {
+      //   $("#data").load(
+      //     "https://raw.githubusercontent.com/paullabkorea/coronaVaccinationStatus/main/data/data.json"
+      //   );
+      // });
+
+      // 예시 2 : 버튼 눌렀을 때, 데이터 태그만 가져오기(h1)
+      // $("#btn_data").click(function() {
+      //   $("#data").load(
+      //     "https://raw.githubusercontent.com/paullabkorea/10000hour/main/index.html h1");
+      // });
+
+      // 예시 3 : Ajax 로딩, 버튼 누르고 콘솔창에서 loaddata 치면 데이터 값 나온걸볼수있다.
+      // $.ajax({경로, 동기화 여부, 성공하면 할 일})
+      $("#btn_data").click(function () {
+        $.ajax({
+          url:
+            "https://raw.githubusercontent.com/paullabkorea/coronaVaccinationStatus/main/data/data.json",
+          async: true,
+          dataType: "JSON",
+          success: function (result) {
+            // $("#data").html(result);
+            loaddata = result;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
